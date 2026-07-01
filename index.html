@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Metro Ticket</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="ticket">
+
+            <div class="header">
+
+                <h1>🚇 Hyderabad Metro Rail</h1>
+
+                <h3>Metro Ticket</h3>
+
+                <div class="success">
+
+                    ✅ Booking Confirmed
+
+                </div>
+
+            </div>
+
+            <div class="section">
+
+                <h2>Passenger Details</h2>
+
+                <table>
+
+                    <tr>
+
+                        <td>Name</td>
+
+                        <td id="name"></td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Email</td>
+
+                        <td id="email"></td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Phone</td>
+
+                        <td id="phone"></td>
+
+                    </tr>
+
+                </table>
+
+            </div>
+
+            <div class="section">
+
+                <h2>Journey Details</h2>
+
+                <table>
+
+                    <tr>
+
+                        <td>Source</td>
+
+                        <td id="source"></td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Destination</td>
+
+                        <td id="destination"></td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Journey Date</td>
+
+                        <td id="journey"></td>
+
+                    </tr>
+
+                </table>
+
+            </div>
+
+            <div class="section">
+
+                <h2>Ticket Details</h2>
+
+                <table>
+
+                    <tr>
+
+                        <td>Booking ID</td>
+
+                        <td id="bookingId"></td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Passengers</td>
+
+                        <td id="passengers"></td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Fare</td>
+
+                        <td id="fare"></td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Status</td>
+
+                        <td id="status"></td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Payment</td>
+
+                        <td id="payment"></td>
+
+                    </tr>
+
+                </table>
+
+            </div>
+
+            <div class="qr-section">
+
+                <h2>Metro Entry QR</h2>
+
+                <img id="ticketQR"
+                     src=""
+                     alt="QR Code">
+
+            </div>
+
+            <div class="buttons">
+
+                <button onclick="window.print()">
+
+                    🖨 Download Ticket
+
+                </button>
+
+                <button onclick="goHome()">
+
+                    🏠 Home
+
+                </button>
+
+            </div>
+
+            <div class="footer">
+
+                <p>
+
+                    Please carry a valid ID while travelling.
+
+                </p>
+
+                <p>
+
+                    Thank you for choosing Hyderabad Metro Rail.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
