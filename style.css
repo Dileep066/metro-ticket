@@ -1,0 +1,295 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+
+    background:linear-gradient(135deg,#00796B,#26A69A);
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:30px;
+
+}
+
+.container{
+
+    width:100%;
+    max-width:900px;
+
+}
+
+.ticket{
+
+    background:#fff;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.25);
+
+    animation:fadeIn .8s ease;
+
+}
+
+.header{
+
+    background:#009688;
+
+    color:white;
+
+    text-align:center;
+
+    padding:30px;
+
+}
+
+.header h1{
+
+    font-size:34px;
+
+    margin-bottom:8px;
+
+}
+
+.header h3{
+
+    font-weight:400;
+
+    margin-bottom:15px;
+
+}
+
+.success{
+
+    display:inline-block;
+
+    background:#fff;
+
+    color:#009688;
+
+    padding:10px 25px;
+
+    border-radius:30px;
+
+    font-size:18px;
+
+    font-weight:600;
+
+}
+
+.section{
+
+    padding:25px 35px;
+
+    border-bottom:1px solid #eee;
+
+}
+
+.section h2{
+
+    color:#009688;
+
+    margin-bottom:20px;
+
+    font-size:22px;
+
+}
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+}
+
+td{
+
+    padding:12px 0;
+
+    font-size:17px;
+
+}
+
+td:first-child{
+
+    width:220px;
+
+    font-weight:600;
+
+    color:#555;
+
+}
+
+td:last-child{
+
+    color:#111;
+
+}
+
+.qr-section{
+
+    padding:30px;
+
+    text-align:center;
+
+}
+
+.qr-section h2{
+
+    color:#009688;
+
+    margin-bottom:20px;
+
+}
+
+#ticketQR{
+
+    width:250px;
+
+    height:250px;
+
+    border:10px solid #fff;
+
+    border-radius:15px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.2);
+
+}
+
+.buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    padding:30px;
+
+}
+
+.buttons button{
+
+    border:none;
+
+    outline:none;
+
+    cursor:pointer;
+
+    padding:14px 30px;
+
+    border-radius:40px;
+
+    font-size:17px;
+
+    color:#fff;
+
+    background:#009688;
+
+    transition:.3s;
+
+}
+
+.buttons button:hover{
+
+    transform:translateY(-3px);
+
+    background:#00796B;
+
+}
+
+.footer{
+
+    text-align:center;
+
+    padding:25px;
+
+    background:#f8f8f8;
+
+    color:#555;
+
+    line-height:30px;
+
+    font-size:15px;
+
+}
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+        transform:translateY(30px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .ticket{
+
+        border-radius:10px;
+
+    }
+
+    .header h1{
+
+        font-size:26px;
+
+    }
+
+    td{
+
+        display:block;
+
+        width:100%;
+
+        padding:6px 0;
+
+    }
+
+    td:first-child{
+
+        font-weight:bold;
+
+        color:#009688;
+
+    }
+
+    .buttons{
+
+        flex-direction:column;
+
+    }
+
+    .buttons button{
+
+        width:100%;
+
+    }
+
+    #ticketQR{
+
+        width:200px;
+        height:200px;
+
+    }
+
+}
